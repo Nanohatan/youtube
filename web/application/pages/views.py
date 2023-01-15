@@ -1,4 +1,5 @@
 from application.pages import app
+from flask import request, redirect, url_for,render_template
 @app.route('/')
 def show_home():
-    return "home is here"
+    return render_template('entries/index.html')
